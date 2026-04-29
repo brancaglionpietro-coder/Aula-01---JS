@@ -10,16 +10,67 @@ body{
     justify-content: center;
     flex-direction: column;
     gap: 5vh;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    background-color: #012f63;
+    color: #f0f8ff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div{
     border: 2px solid #090909;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: rgba(107, 212, 253, 0.4) -5px 5px, rgba(66, 195, 255, 0.3) -10px 10px, rgba(37, 193, 255, 0.2) -15px 15px, rgba(33, 182, 252, 0.1) -20px 20px, rgba(11, 153, 248, 0.05) -25px 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 4vh;
+    gap: 3vh;
+    width: 250px;
+    height: 400px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3vh;
+}
+
+lable{
+    margin-bottom: -20px;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 999px;
+    border: none;
+    border: 2px solid #31aff8
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 999px;
+    border:none;
+    border: 2px solid #31aff8;
+    transition: all 200ms ease-in-out;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 2px solid #31aff8;
+    background-color: #31aff8;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 3px 10px #00000085;
 }
