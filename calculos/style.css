@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+div{
+    border: 2px solid #090909;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(107, 212, 253, 0.4) -5px 5px, rgba(66, 195, 255, 0.3) -10px 10px, rgba(37, 193, 255, 0.2) -15px 15px, rgba(33, 182, 252, 0.1) -20px 20px, rgba(11, 153, 248, 0.05) -25px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4vh;
+}
