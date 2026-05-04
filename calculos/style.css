@@ -102,3 +102,41 @@ h1, h2{
 h1{
     font-size: 40px;
 }
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    top: 0;
+    box-shadow: 0px 3px 10px #090909;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    animation: fromTop 200ms ease-in-out;
+}
+
+@keyframes fromTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #090909;
+    font-size: 20px;
+    opacity: 0.5;
+    font-weight: 600;
+    transition: all 400ms ease-in-out;
+}
+
+a:hover{
+    cursor: pointer;
+    opacity: 1;
+}
