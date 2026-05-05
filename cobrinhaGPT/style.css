@@ -1,0 +1,111 @@
+/* RESET + BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 10px #090909;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    animation: fromTop 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+@keyframes fromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* LINKS */
+nav a {
+    text-decoration: none;
+    color: #090909;
+    font-size: 18px;
+    opacity: 0.6;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+/* ÁREA CENTRAL (MENU + JOGO) */
+.menu,
+#gameArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 100px; /* compensar navbar */
+}
+
+/* MENU */
+.menu {
+    text-align: center;
+    background: #222;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00ff88;
+}
+
+/* TÍTULO */
+h1 {
+    margin-bottom: 30px;
+    color: #00ff88;
+}
+
+/* BOTÕES */
+button {
+    display: block;
+    width: 220px;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #00ff88;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00cc6a;
+}
+
+/* SCORE */
+#score {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* CANVAS (JOGO) */
+canvas {
+    background: #222;
+    border: 3px solid #00ff88;
+    border-radius: 6px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <a href="../calculos/">Cálculos</a>
+        <a href="../calculadoraGPT/">Calculadora GPT</a>
+        <a href="../calcMedia/">Média</a>
+        <a href="../cobrinhaGPT/">Snake Game</a>
+        <a href="../bootstrap5/">Bootstrap</a>
+    </nav>
+
+    <!-- Tela inicial -->
+    <div class="menu" id="menu">
+        <h1>🐍 Snake Clássico</h1>
+        <button id="startBtn">Iniciar Jogo</button>
+        <button id="scoreBtn">Pontuações</button>
+    </div>
+
+    <!-- Área do jogo (inicialmente escondida) -->
+    <main id="gameArea" style="display: none;">
+        <div id="score">Pontuação: 0</div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </main>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
